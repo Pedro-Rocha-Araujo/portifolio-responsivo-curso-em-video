@@ -55,7 +55,7 @@ section#ficha{
   padding: 20px;
   border-radius: 8px;
   grid-column: 2 / 3;
-  margin-top: 20px;
+  margin: 20px 0;
   gap: 20px;
 }
 
@@ -74,7 +74,7 @@ main section#ficha img.foto{
 main section#ficha h1{
   color: var(--destaque);
   margin: 15px 0;
-  font-size: 1.6rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -98,4 +98,39 @@ div#social a{
 
 div#social a:hover{
   color: var(--destaque-inverso);
+}
+
+section#detalhes{
+  grid-column: 2 / 3;
+
+}
+
+article{
+  background-color: var(--fundo-card);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+
+}
+
+article h2{
+  color: var(--destaque);
+  margin: 15px 0;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+article#video .video-container{
+  position: relative;
+  width: 100%;
+  margin: auto;
+  aspect-ratio: 16/9;
+}
+
+.video-container iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
