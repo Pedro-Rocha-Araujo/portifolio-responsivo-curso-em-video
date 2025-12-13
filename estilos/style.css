@@ -14,7 +14,7 @@
 }
 
 body{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, arial, Tahoma, sans-serif;
   background-color: var(--fundo-principal);
 }
 
@@ -115,14 +115,14 @@ article{
 
 article h2{
   color: var(--destaque);
-  margin: 15px 0;
+  margin: 35px 0;
   font-size: 1.8rem;
   text-align: center;
 }
 
 article#video .video-container{
   position: relative;
-  width: 100%;
+  width: 85%;
   margin: auto;
   aspect-ratio: 16/9;
 }
@@ -133,4 +133,49 @@ article#video .video-container{
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+
+
+
+
+div.container-habilidades{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+@media screen and (min-width: 768px){
+  div.container-habilidades{
+    grid-template-columns: 1fr 1fr;
+}
+}
+
+div.container-habilidades div.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.container-habilidades .nome{
+  font-weight: bold;
+  color: var(--texto);
+}
+
+div.container-habilidades .porcentagem{
+  font-weight: bold;
+  color: var(--destaque);
+}
+
+div.container-habilidades .barra{
+  width: 100%;
+  height: 10px;
+  background-color: var(--fundo-principal);
+  border-radius: 5px;
+}
+
+div.container-habilidades .progresso{
+  background-color: #0077ff;
+  height: 100%;
+  border-radius: 5px;
 }
