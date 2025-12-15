@@ -18,6 +18,10 @@ body{
   background-color: var(--fundo-principal);
 }
 
+
+
+
+
 header{
   background-color: var(--destaque);
   color: var(--texto);
@@ -44,6 +48,10 @@ ul li a{
 ul li a:hover{
   background-color: var(--destaque-inverso);
 }
+
+
+
+
 
 main{
   display: grid;
@@ -115,7 +123,7 @@ article{
 
 article h2{
   color: var(--destaque);
-  margin: 35px 0;
+  margin: 40px 0;
   font-size: 1.8rem;
   text-align: center;
 }
@@ -178,4 +186,37 @@ div.container-habilidades .progresso{
   background-color: #0077ff;
   height: 100%;
   border-radius: 5px;
+}
+
+
+
+
+
+div#formacao-container{
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+div#formacao-container div.curso{
+  background-color: var(--fundo-principal);
+  border-radius: 10px;
+  border-left: 5px solid var(--destaque-inverso);
+  padding: 20px 0 20px 15px;
+  transition: border 0.1s, color 0.1s;
+}
+
+div#formacao-container div.curso:hover{
+  border-left: 8px solid var(--destaque);
+  cursor: pointer;
+}
+
+div#formacao-container p.periodo{
+  color: #0077ff;
+  font-weight: bold;
+}
+
+div#formacao-container h3.instituicao{
+  color: #0077ff;
+  font-size: 1.2rem;
 }
