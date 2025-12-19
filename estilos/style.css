@@ -23,6 +23,9 @@ body{
 
 
 header{
+  position: sticky;
+  top: 0;
+  z-index: 1;
   background-color: var(--destaque);
   color: var(--texto);
   padding: 10px;
@@ -134,7 +137,7 @@ article#video{
 
 article#video .video-container{
   position: relative;
-  width: 85%;
+  width: 95%;
   max-width: 900px;
   margin: auto;
   aspect-ratio: 16/9;
@@ -250,7 +253,7 @@ div#projeto-container div.projeto:hover{
 
 div#projeto-container div.projeto img{
   width: 100%;
-  aspect-ratio: 4/3;
+  aspect-ratio: 16/9;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -284,7 +287,7 @@ footer a:hover{
 
 
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1200px){
   div.container-habilidades{
     grid-template-columns: 1fr 1fr;
 }
